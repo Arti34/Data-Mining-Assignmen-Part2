@@ -1,0 +1,33 @@
+{
+  "name": "fullstack-todo-app",
+  "version": "1.0.0",
+  "description": "Modern dynamic full-stack Todo application with real-time sync, Kanban, and SQLite",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node --watch server/index.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "install:all": "npm install && npm --prefix client install",
+    "dev": "node scripts/dev.js",
+    "test": "node server/test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  },
+  "keywords": [
+    "todo",
+    "fullstack",
+    "react",
+    "sqlite",
+    "websockets",
+    "kanban"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer-core": "^25.10.0"
+  }
+}
