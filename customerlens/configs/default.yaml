@@ -1,0 +1,10 @@
+seed: 42
+features:
+  default: [annual_income_k, spending_score]
+  candidates:
+    - [annual_income_k, spending_score]
+    - [age, annual_income_k, spending_score]
+algorithms: [kmeans, agglomerative, dbscan]
+k_range: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+scalers: [standard, minmax, robust]
+pca_components: [null, 2]
